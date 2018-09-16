@@ -1,0 +1,14 @@
+.navbar.navbar-default.navbar-static-top(role='navigation')
+  .container
+    .navbar-header
+      a.navbar-brand(href='#') My Application
+    .navbar-collapse.collapse
+      ul.nav.navbar-nav
+        li(class= {active: pagetitle === 'Home'})
+          a(href='#/app/home') Home
+        li(class= {active: pagetitle === 'settings'})
+          a(href='#/app/settings') settings
+        li(class= {active: pagetitle === 'users'})
+          a(href='#/app/user') users
+        li(class= {active: pagetitle === 'product'})
+          a(href='#/app/product') product

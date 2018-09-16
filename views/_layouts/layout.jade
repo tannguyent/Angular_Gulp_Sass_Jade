@@ -1,0 +1,14 @@
+include ../_Patials/variables 
+doctype html
+html
+  include ../_Patials/header 
+  body
+    include ../_Patials/navigationbar
+    div.container(ui-view="container")
+      block content
+    include ../_Patials/footer
+    block javascripts
+      script(src='/assets/component/jquery/jquery.min.js') 
+      script(src='/assets/component/bootstrap/js/bootstrap.min.js')
+      script(src='/assets/component/requirejs/require.js', data-main="/assets/javascripts/startup.js")
+      

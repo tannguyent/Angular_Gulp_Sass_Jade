@@ -1,0 +1,6 @@
+#custom-search-input
+  .input-group.col-md-12
+    input.search-query.form-control(type='text', placeholder='Search', ng-model="keySearch")
+    span.input-group-btn
+      #btnSearch.button.btn.btn-danger(type='button',ng-click='search()')
+        span.glyphicon.glyphicon-search

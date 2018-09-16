@@ -1,0 +1,14 @@
+table.table.table-striped
+  thead
+    tr
+      td 
+        b Order
+      td 
+        b Name
+      td 
+        b Description
+  tbody
+    tr(ng-repeat='product in products')
+      td {{product.order}}
+      td {{product.name}}
+      td {{product.description}}
